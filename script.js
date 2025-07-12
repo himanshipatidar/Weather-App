@@ -14,8 +14,8 @@ window.onload = loadCities;
 
 async function getWeather() {
     const city = document.querySelector("select").value;
-    const apiKey = '4c43ac62fc0ae8104513fc1a17d8deda';
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+
 
     try {
         const response = await fetch(url);
